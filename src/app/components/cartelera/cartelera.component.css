@@ -1,0 +1,204 @@
+/* HEADER */
+header{
+    display: flex;
+    min-width:70px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+body{
+    font-family: Impact;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+nav a{
+padding-right: 10px;
+}
+
+nav a:hover{
+color: white;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Pelicula */
+
+.cuerpo-pelicula{
+    width: 100%;
+    background-color: black;
+     display: flex; 
+}
+
+.cuerpo-pelicula .grupo-peliculaDescripcion{
+    background-color: black;
+     margin: auto; 
+    margin-left: 45px;
+    
+    
+
+}
+
+.cuerpo-pelicula .grupo-peliculaDescripcion .pelicula-img{
+    width: 100%;
+    
+ 
+}
+
+.cuerpo-pelicula .grupo-peliculaDescripcion .descripcion{
+
+    color: white;
+    font-size: 17px;
+
+
+}
+.cuerpo-pelicula .grupo-peliculaDescripcion .tituloPelicula{
+    color: greenyellow;
+
+}
+.cuerpo-pelicula .grupo-peliculaDescripcion .tituloPelicula .descripcionTitulo{
+color: white;
+
+}
+.cuerpo-pelicula .grupo-peliculaDescripcion .paisOrigen{
+color: greenyellow;   
+
+}
+.cuerpo-pelicula .grupo-peliculaDescripcion .paisOrigen .descripcionPais{
+color: white;
+
+}
+
+.cuerpo-pelicula .grupo-peliculaDescripcion .director {
+color: greenyellow;
+}
+
+.cuerpo-pelicula .grupo-peliculaDescripcion .director .descripcionDirector{
+    color: white;
+}
+
+.cuerpo-pelicula .grupo-peliculaDescripcion .actores{
+color: greenyellow;
+
+}
+
+.cuerpo-pelicula .grupo-peliculaDescripcion .actores .descripcionActores{
+color: white;
+
+}
+.cuerpo-pelicula .grupo-peliculaDescripcion .multiplex{
+    color: greenyellow;
+}
+
+.cuerpo-pelicula .grupo-snack .comida p{
+color: white;
+text-align: center;
+  
+}
+ 
+
+/* FOOTER */
+.pie-pagina{
+width: 100%;
+background-color: black;
+
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 100px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: greenyellow;
+    margin-bottom: 25px;
+    font-size: 20px;   
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: greenyellow;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+     
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    background-color: black;
+    text-align: center;
+    transition: all 300ms ease;
+
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+color: white;
+}
+.pie-pagina .grupo-2{
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: greenyellow;
+
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+@media screen and (max-widht: 700px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    
+    }
+}
+
+
+
+
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}

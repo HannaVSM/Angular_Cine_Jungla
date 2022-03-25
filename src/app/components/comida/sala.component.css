@@ -1,5 +1,4 @@
 /* HEADER */
-
 header{
     display: flex;
     min-width:70px;
@@ -37,95 +36,68 @@ color: white;
     margin-right: 10px;
 }
 
-/* PAGOS */
+/* CUERPO */
 
-.pagos{
-
-text-align: center;
- 
+.snacks{
+    display:grid;
+    grid-template-columns: repeat(3,1fr); 
+    /* margin: auto; */
+    padding: 100px;
+    grid-gap: 70px;
+    place-items: center;
+    background-color: black;
 }
-
-.pagos .formulario-boleta{
-    background-color: aqua;
-    text-align: center; 
-    padding: 30px 30px 30px 30px;
-    width: 100%;
-    max-width: 700px;
-    border-radius: 10px;
-    position:relative;
-    margin:auto;
-    z-index: 1;
-    
-}
-.pagos .formulario-boleta label{
    
-    display: block;
-    margin-bottom: 5px;
-    margin-right: 2px;
-    
-}
-
-.pagos .formulario-boleta input{
-   
-  border: 2px solid grey;
-  height: 50px;
-  font-size: 16px;
-  width: 90%;
-  padding: 5px 12px;
-  border-radius: 5px;
-    
-}
-
-
-
-.pagos .formulario-tarjetas{
+   .snacks .snack1 p{
+       text-align: center;
+       color: greenyellow;
+   }
+   .snacks .snack2 p{
+       text-align: center;
+       color: greenyellow;
+   }
+   .snacks .snack3 p{
+       text-align: center;
+       color: greenyellow;
+   }
+   .snacks .snack4 p{
+       text-align: center;
+       color: greenyellow;
+   }
+   .snacks .snack5 p{
+       text-align: center;
+       color: greenyellow;
+   }
+   .snacks .snack6 p{
     text-align: center;
-    background-color: blue;
-    text-align: center; 
-    padding: 30px 30px 30px 30px;
-    width: 100%;
-    max-width: 700px;
-    border-radius: 10px;
-    position:relative;
-    margin:auto;
-    z-index: 1;
-    margin-bottom: 40px;
-
-}
-
-.pagos .formulario-tarjetas label{
-
-    display: block;
-    margin-bottom: 5px;
-    margin-right: 2px;
-}
-
-.pagos .formulario-tarjetas input,.btn-enviar{
-
- border: 2px solid gray;
-  height: 50px;
-  font-size: 16px;
-  width: 90%;
-  padding: 5px 12px;
-  border-radius: 5px;
-
-}
-
-.formulario-tarjetas input{
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-
-
-
-
-
-
-
+    color: greenyellow;
+   }
+   .snacks .snack7 p{
+    text-align: center;
+    color: greenyellow;
+    }
+    .snacks .snack8 p{
+        text-align: center;
+        color: greenyellow;
+    }
+    .snacks .snack9 p{
+        text-align: center;
+        color: greenyellow;
+    }
+    .snacks .snack10 p{
+        text-align: center;
+        color: greenyellow;
+    }
+    .snacks .snack11 p{
+        text-align: center;
+        color: greenyellow;
+    }
+    .snacks .snack12 p{
+        text-align: center;
+        color: greenyellow;
+    }
 
 /* FOOTER */
-
 .pie-pagina{
     width: 100%;
     background-color: black;
@@ -193,7 +165,10 @@ text-align: center;
         padding-right: 20px;
     }
 
-    /* RESPONSIVE */
+
+    /* PARAMETROS PARA RESPONSIVE */
+
+    
     @media screen and (max-widht: 700px) {
         .pie-pagina .grupo-1{
             width: 90%;
