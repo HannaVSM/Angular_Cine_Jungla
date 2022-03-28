@@ -11,6 +11,7 @@ import { PagoComponent } from './components/pago/pago.component';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { RegistrarseComponent } from './components/registrarse/registrarse.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { RegistrarseComponent } from './components/registrarse/registrarse.compo
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
