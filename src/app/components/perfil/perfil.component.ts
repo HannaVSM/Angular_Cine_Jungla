@@ -12,15 +12,24 @@ export class PerfilComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.getCliente(10295281);
+    this.getClienteById(10295281);
+    this.getClienteByUser("soni14", "password105");
   }
 
   clientes: Cliente[] = [];
 
   constructor(private clienteService: ClienteService) { }
 
-  getCliente(id:any){
-    this.clienteService.getCliente(id).subscribe(data =>{
+  getClienteById(id:any){
+    this.clienteService.getClienteById(id).subscribe(data =>{
+      this.clientes = data;
+      console.log(data);
+    })
+  }
+
+  getClienteByUser(username: string, password: string){
+    this.clienteService.getClienteByUsuario(username, password).subscribe(data =>{
+      this.clientes = data;
       console.log(data);
     })
   }

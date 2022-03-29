@@ -12,8 +12,12 @@ export class ClienteService{
   constructor(private http:HttpClient) {
    }
 
-  getCliente(id: any):Observable<Cliente>{
-    const url = `${ this.baseUrlBack }`+id;;
-      return this.http.get<Cliente>(url);
-}
+  getClienteById(id: any):Observable<Cliente[]>{
+    const url = `${ this.baseUrlBack }`+id;
+      return this.http.get<Cliente[]>(url);
+  }
+  getClienteByUsuario(username: string, password: string):Observable<Cliente[]>{
+  const url = `${ this.baseUrlBack }sesion/`+username+"/"+password;
+    return this.http.get<Cliente[]>(url);
+  }
 }
