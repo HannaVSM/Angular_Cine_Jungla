@@ -16,7 +16,7 @@ body{
 
 a{
     text-decoration: none;
-    color: yellowgreen;
+    color: #036635;
 }
 
 nav a{
@@ -69,7 +69,7 @@ color: white;
 
 }
 .cuerpo-pelicula .grupo-peliculaDescripcion .tituloPelicula{
-    color: greenyellow;
+    color: #036635;
 
 }
 .cuerpo-pelicula .grupo-peliculaDescripcion .tituloPelicula .descripcionTitulo{
@@ -77,7 +77,7 @@ color: white;
 
 }
 .cuerpo-pelicula .grupo-peliculaDescripcion .paisOrigen{
-color: greenyellow;   
+color: #036635;   
 
 }
 .cuerpo-pelicula .grupo-peliculaDescripcion .paisOrigen .descripcionPais{
@@ -86,7 +86,7 @@ color: white;
 }
 
 .cuerpo-pelicula .grupo-peliculaDescripcion .director {
-color: greenyellow;
+color: #036635;
 }
 
 .cuerpo-pelicula .grupo-peliculaDescripcion .director .descripcionDirector{
@@ -94,7 +94,7 @@ color: greenyellow;
 }
 
 .cuerpo-pelicula .grupo-peliculaDescripcion .actores{
-color: greenyellow;
+color: #036635;
 
 }
 
@@ -103,7 +103,7 @@ color: white;
 
 }
 .cuerpo-pelicula .grupo-peliculaDescripcion .multiplex{
-    color: greenyellow;
+    color:#036635;
 }
 
 .cuerpo-pelicula .grupo-snack .comida p{
@@ -141,13 +141,13 @@ background-color: black;
     width: 100px;
 }
 .pie-pagina .grupo-1 .box h2{
-    color: greenyellow;
+    color: #036635;
     margin-bottom: 25px;
     font-size: 20px;   
 }
 
 .pie-pagina .grupo-1 .box p{
-    color: greenyellow;
+    color: #036635;
     margin-bottom: 10px;
 }
 
@@ -172,7 +172,7 @@ color: white;
     background-color: black;
     padding: 15px 10px;
     text-align: center;
-    color: greenyellow;
+    color: #036635;
 
 }
 

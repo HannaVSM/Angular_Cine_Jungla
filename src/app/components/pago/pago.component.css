@@ -11,11 +11,13 @@ header{
 body{
     font-family: Impact;
     margin: 0;
+    background-color: black;
 }
+
 
 a{
     text-decoration: none;
-    color: yellowgreen;
+    color:#036635;
 }
 
 nav a{
@@ -44,9 +46,12 @@ color: white;
 text-align: center;
  
 }
+.pagos h1{
+    color: #036635;
+}
 
 .pagos .formulario-boleta{
-    background-color: aqua;
+    background-color: silver;
     text-align: center; 
     padding: 30px 30px 30px 30px;
     width: 100%;
@@ -80,7 +85,7 @@ text-align: center;
 
 .pagos .formulario-tarjetas{
     text-align: center;
-    background-color: blue;
+    background-color: silver;
     text-align: center; 
     padding: 30px 30px 30px 30px;
     width: 100%;
@@ -153,13 +158,13 @@ text-align: center;
         width: 100px;
     }
     .pie-pagina .grupo-1 .box h2{
-        color: greenyellow;
+        color: #036635;
         margin-bottom: 25px;
         font-size: 20px;   
     }
     
     .pie-pagina .grupo-1 .box p{
-        color: greenyellow;
+        color: #036635;
         margin-bottom: 10px;
     }
     
@@ -184,7 +189,7 @@ text-align: center;
         background-color: black;
         padding: 15px 10px;
         text-align: center;
-        color: greenyellow;
+        color: #036635;
     
     }
     
