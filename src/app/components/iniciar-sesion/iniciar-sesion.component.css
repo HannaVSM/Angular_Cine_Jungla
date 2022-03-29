@@ -1,12 +1,5 @@
 /* HEADER */
-header{
-    display: flex;
-    min-width:70px;
-    background-color: black;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
+
 body{
     font-family: Impact;
     margin: 0;
@@ -17,31 +10,15 @@ a{
     color: #036635;
 }
 
-nav a{
-padding-right: 10px;
-}
-
-nav a:hover{
-color: white;
-}
 
 
-.logo{
-    display: flex;
-    align-items: center;
-}
-.logo img{
-    height: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
 /* INICIO DE SESION */
 
 .pagos{
 
     text-align: center;
     background-color: black;
-     
+    min-height: 100vh;
     }
     
     .pagos .formulario-boleta{
@@ -52,10 +29,11 @@ color: white;
         max-width: 300px;
         border-radius: 10px;
         position:relative;
+        top: 90px;
         margin:auto;
         z-index: 1;
-      
         margin-bottom: 50px;
+        
         
     }
 
@@ -128,72 +106,7 @@ color: white;
 
 /* FOOTER */
 
-.pie-pagina{
-    width: 100%;
-    background-color: black;
-    
-    }
-    .pie-pagina .grupo-1{
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-gap: 50px;
-        padding: 45px 0px;
-    
-    }
-    
-    .pie-pagina .grupo-1 .box figure{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .pie-pagina .grupo-1 .box figure img{
-        width: 100px;
-    }
-    .pie-pagina .grupo-1 .box h2{
-        color: #036635;
-        margin-bottom: 25px;
-        font-size: 20px;   
-    }
-    
-    .pie-pagina .grupo-1 .box p{
-        color: #036635;
-        margin-bottom: 10px;
-    }
-    
-    .pie-pagina .grupo-1 .red-social a{
-         
-        display: inline-block;
-        text-decoration: none;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        margin-right: 10px;
-        background-color: black;
-        text-align: center;
-        transition: all 300ms ease;
-    
-    }
-    
-    .pie-pagina .grupo-1 .red-social a:hover{
-    color: white;
-    }
-    .pie-pagina .grupo-2{
-        background-color: black;
-        padding: 15px 10px;
-        text-align: center;
-        color: #036635;
-    
-    }
-    
-    .pie-pagina .grupo-2 small{
-        font-size: 15px;
-        padding-right: 20px;
-    }
+
 
     /* RESPONSIVE */
     @media screen and (max-widht: 700px) {
