@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="control-perfil.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+        <ul class="tabs">
+            <li><a href="#tab1"><span class="tab-text">Mi perfil</span></a></li>
+            <li><a href="#tab2"><span class="tab-text" ></span>Mis Puntos</a></li>
+            <li><a href="#tab3"><span class="tab-text"></span>Cerrar Sesion</a></li>
+
+        </ul>
+        <div class="secciones">
+            <article id="tab1">
+               <h1>Informacion general</h1>
+                <!--FORMULARIO  -->
+                <form class="formulario-boleta">
+
+                    <div class="elemento1">
+                
+                        <label for="nombre-usuario" > Nombre de usuario</label>   
+                        <input id="nombre-usuario" type="text" disabled=""  name="nombre-usuario"> 
+                
+                    </div>
+                
+                  <div class="elemento2">
+                
+                    <label for="nombre-completo" > Nombre Completo </label>   
+                    <input id="nombre-completo" type="text" disabled=""  name="nombre-completo">
+                
+                   </div>
+                   <div class="elemento3">
+                
+                    <label for="documento-identidad" > Documento de identidad </label>   
+                    <input id="documento-identidad" type="text" disabled=""   name="documento-identidad">
+                
+                   </div>
+                    
+                   
+        
+                </form>
+
+            </article>
+            <article id="tab2">
+                <h1>Sobre mis Puntos</h1>
+                <p>Recuerda que con 100 puntos puedes asistir a una pelicula en silleteria general totalmente gratis</p>
+    
+                <label for="puntos"> Cantidad de puntos </label>   
+                <input id="puntos" type="text"  name="puntos">
+                
+                <label for="puntos-vencimiento"> vencimiento de puntos </label>   
+                <input id="puntos-vencimiento" type="text"  name="puntos">
+    
+ 
+             </article>
+
+             <article id="tab3">
+                <h1>Cerrar sesion</h1>
+                <p>Presiona el boton para cerrar la Sesion</p>
+                 <!--BOTON DE CERRAR SESION -->
+                 <button type="submit" class="btn-salir"> Cerrar sesion </button>
+            
+             </article>
+ 
+        </div>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,115 @@
+
+
+/* PAGOS */
+
+.pagos{
+
+text-align: center;
+ 
+}
+.pagos h1{
+    color: #036635;
+}
+
+.pagos .formulario-boleta{
+    background-color: silver;
+    text-align: center; 
+    padding: 30px 30px 30px 30px;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    position:relative;
+    margin:auto;
+    z-index: 1;
+    
+}
+.pagos .formulario-boleta label{
+   
+    display: block;
+    margin-bottom: 5px;
+    margin-right: 2px;
+    
+}
+
+.pagos .formulario-boleta input{
+   
+  border: 2px solid grey;
+  height: 50px;
+  font-size: 16px;
+  width: 90%;
+  padding: 5px 12px;
+  border-radius: 5px;
+    
+}
+
+
+
+.pagos .formulario-tarjetas{
+    text-align: center;
+    background-color: silver;
+    text-align: center; 
+    padding: 30px 30px 30px 30px;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    position:relative;
+    margin:auto;
+    z-index: 1;
+    margin-bottom: 40px;
+
+}
+
+.pagos .formulario-tarjetas label{
+
+    display: block;
+    margin-bottom: 5px;
+    margin-right: 2px;
+}
+
+.pagos .formulario-tarjetas input,.btn-enviar{
+
+ border: 2px solid gray;
+  height: 50px;
+  font-size: 16px;
+  width: 90%;
+  padding: 5px 12px;
+  border-radius: 5px;
+
+}
+
+.formulario-tarjetas input{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+    /* RESPONSIVE */
+    @media screen and (max-widht: 700px) {
+        .pie-pagina .grupo-1{
+            width: 90%;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+        
+        }
+    }
+    
+    
+    @media (max-width:700px){
+        header{
+            flex-direction: column;
+        }
+    
+        nav{
+            padding: 10px 0px;
+        }
+    }

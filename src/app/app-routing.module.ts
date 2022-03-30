@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CompraComponent } from './components/compra/compra.component';
-import { FuncionPeliculaComponent } from './components/funcion-pelicula/funcion-pelicula.component';
+import { CompraComponent } from './components/compra/compra-components/compra.component';
+import { FuncionPeliculaComponent } from './components/funcion-pelicula/funcion-pelicula-components/funcion-pelicula.component';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
-import { PagoComponent } from './components/pago/pago.component';
-import { PerfilComponent } from './components/perfil/perfil.component';
+import { PagoComponent } from './components/pago/pago-components/pago.component';
+import { PerfilComponent } from './components/perfil/perfil-components/perfil.component';
 import { RegistrarseComponent } from './components/registrarse/registrarse.component';
 import { SalaComponent } from './components/sala/sala.component';
 import { DashboardComponent } from './general/dashboard/dashboard.component';
