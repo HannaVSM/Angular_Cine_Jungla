@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './general/dashboard/dashboard.component';
 import { SnacksComponent } from './components/snacks/snacks-components/snacks.component';
 import { CargarScriptsService } from './cargar-scripts.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import { CargarScriptsService } from './cargar-scripts.service';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [
     CargarScriptsService

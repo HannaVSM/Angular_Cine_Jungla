@@ -19,7 +19,7 @@ export class PerfilComponent implements OnInit {
   clientes: Cliente[] = [];
 
   constructor(private clienteService: ClienteService , private _CargaScripts:CargarScriptsService) {
-    _CargaScripts.carga(["./control/control-perfil"]);
+  
    }
 
   getClienteById(id:any){
