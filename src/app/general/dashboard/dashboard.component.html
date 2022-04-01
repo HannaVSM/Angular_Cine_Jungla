@@ -12,14 +12,14 @@
 <body>
   <!-- HEADER -->
   <header>
-    <a href="#" class="logo">
+    <a (click)="irCartelera()" class="logo">
       <img src="../../../assets/images/logoCine.png" alt="logo del cine">
       <h2 class="nombre-empresa"> Cine Jungla </h2>
     </a>
     <nav>
-      <a href="" class="nav-link">CARTELERA</a>
-      <a href="" class="nav-link">SNACKS</a>
-      <a href="" class="nav-link">PERFIL</a>
+      <a (click)="irCartelera()"  class="nav-link">CARTELERA</a>
+      <a  (click)="irSnacks()" class="nav-link">SNACKS</a>
+      <a  (click)="irPerfil()" class="nav-link">PERFIL</a>
     </nav>
   </header>
 
@@ -29,9 +29,9 @@
   <div class="grupo-1">
       <div class="box">
 
-          <!-- <img src="../../../assets/images/logoCine.png" alt="logo del cine en footer"> -->
+         
            <figure>
-              <a href="#">
+              <a (click)="irCartelera()">
               <img src="../../../assets/images/logoCine.png" alt="logo del cine en footer">
               </a>
           </figure>

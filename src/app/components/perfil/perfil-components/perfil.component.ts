@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Cliente } from 'src/app/interfaces/cliente.interface';
 import { ClienteService } from 'src/app/services/cliente.service';
-
+import { CargarScriptsService } from '../../../cargar-scripts.service';
 @Component({
   selector: 'app-perfil',
   templateUrl: './perfil.component.html',
@@ -18,7 +18,9 @@ export class PerfilComponent implements OnInit {
 
   clientes: Cliente[] = [];
 
-  constructor(private clienteService: ClienteService) { }
+  constructor(private clienteService: ClienteService , private _CargaScripts:CargarScriptsService) {
+    _CargaScripts.carga(["./control/control-perfil"]);
+   }
 
   getClienteById(id:any){
     this.clienteService.getClienteById(id).subscribe(data =>{

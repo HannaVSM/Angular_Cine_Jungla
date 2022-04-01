@@ -13,14 +13,15 @@ import { PerfilComponent } from './components/perfil/perfil-components/perfil.co
 import { RegistrarseComponent } from './components/registrarse/registrarse.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './general/dashboard/dashboard.component';
-
+import { SnacksComponent } from './components/snacks/snacks-components/snacks.component';
+import { CargarScriptsService } from './cargar-scripts.service';
 @NgModule({
   declarations: [
     AppComponent,
     // CarteleraComponent,
     // CompraComponent,
     // FuncionPeliculaComponent,
-     IniciarSesionComponent
+     IniciarSesionComponent,
     // PagoComponent,
     // PerfilComponent,
     // RegistrarseComponent,
@@ -33,8 +34,11 @@ import { DashboardComponent } from './general/dashboard/dashboard.component';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    CargarScriptsService
+  ],
   exports: [AppRoutingModule],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }

@@ -48,7 +48,7 @@ nav a:hover{
 /* FOOTER */
 .pie-pagina{
 width: 100%;
-background-color: black;
+background-color:#D9D9D9;
 
 }
 .pie-pagina .grupo-1{
@@ -73,13 +73,13 @@ background-color: black;
     width: 100px;
 }
 .pie-pagina .grupo-1 .box h2{
-    color: #036635;
+    color: #3d3935;
     margin-bottom: 25px;
     font-size: 20px;
 }
 
 .pie-pagina .grupo-1 .box p{
-    color: #036635;
+    color: #3d3935;
     margin-bottom: 10px;
 }
 
@@ -91,7 +91,7 @@ background-color: black;
     height: 45px;
     line-height: 45px;
     margin-right: 10px;
-    background-color: black;
+    background-color:#D9D9D9 ;
     text-align: center;
     transition: all 300ms ease;
 
@@ -101,10 +101,10 @@ background-color: black;
 color: white;
 }
 .pie-pagina .grupo-2{
-    background-color: black;
+    background-color: #004D2B;
     padding: 15px 10px;
     text-align: center;
-    color: #036635;
+    color: #D9D9D9;
 
 }
 

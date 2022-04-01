@@ -1,75 +1,19 @@
-
-    <!-- SECCION DONDE SE UBICA LA CARTELERA DE PELICULAS -->
-    <div class="cartelera">
-
-
-        <div class="product--grid">
-            <div *ngFor="let pelicula of peliculas">
-              <img [src]="pelicula.direccionPortada" alt="image">
-              <p>{{pelicula.nombrePelicula}}</p>
-              <p class="info">Duración de la pelicula: {{pelicula.duracionPelicula}} min.</p>
-            </div>
-        </div>
+<!-- SECCION DONDE SE UBICA LA CARTELERA DE PELICULAS -->
+<div class="cartelera">
 
 
+    <div class="product--grid">
 
 
+        <div *ngFor="let pelicula of peliculas">
+            <a (click)="irFuncionPelicula()" class="nav-link">
 
-        <!-- <div class="pelicula1">
+                <img [src]="pelicula.direccionPortada" alt="image">
 
-            <a href="#" class="nav-link">
-            <img src="avengersPoster.jpg" alt="poster de pelicula"
-            title="Avengers"
-            width="310px"
-            height="390px">
-
+                <p>{{pelicula.nombrePelicula}}</p>
+                <p class="info">Duración de la pelicula: {{pelicula.duracionPelicula}} min.</p>
             </a>
-            <p> Avengers </p>
-
-
         </div>
-
-        <div class="pelicula2">
-
-            <a href="#" class="nav-link">
-                <img src="gorePoster.jpg" alt="poster de pelicula"
-            title="Avengers"
-            width="310px"
-            height="390px">
-            </a>
-            <p> Tanatomorfosis </p>
-        </div>
-
-        <div class="pelicula3">
-
-            <a href="#" class="nav-link">
-                <img src="batman.jpg" alt="poster de pelicula"
-            title="Avengers"
-            width="310px"
-            height="390px">
-            </a>
-            <p> Batman </p>
-        </div>
-        <div class="pelicula4">
-
-            <a href="#" class="nav-link">
-                <img src="midsommar.png" alt="poster de pelicula"
-            title="Avengers"
-            width="310px"
-            height="390px">
-            </a>
-            <p>  Midsommar </p>
-        </div>
-        <div class="pelicula5">
-
-            <a href="#" class="nav-link">
-                <img src="fullmetal.jpg" alt="poster de pelicula"
-            title="Avengers"
-            width="310px"
-            height="390px">
-            </a>
-            <p> Nacido para matar </p>
-        </div> -->
-
     </div>
 
+</div>
