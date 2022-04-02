@@ -1,0 +1,19 @@
+.sala{
+  width: 350px;
+}
+.contenedorSilla{
+  display: inline;
+
+}
+.silla{
+  width: 30px;
+  height: 30px;
+  background-color: #3A084D;
+  color: white;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+.silla:disabled{
+  background-color: #4D3708;
+}

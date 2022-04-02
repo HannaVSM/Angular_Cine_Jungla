@@ -1,1 +1,11 @@
-<p>super codigo de Juan</p>
+<div class="pelicula">
+  <img [src]="pelicula.direccionPortada" alt="image">
+  <p> {{pelicula.nombrePelicula}}</p>
+  <p class="info">{{pelicula.descripcionPelicula}}</p>
+  <p>Duración de la pelicula</p>
+  <p class="info"> {{pelicula.duracionPelicula}} min.</p>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>
+

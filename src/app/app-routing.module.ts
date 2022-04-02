@@ -6,7 +6,7 @@ import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesi
 import { PagoComponent } from './components/pago/pago-components/pago.component';
 import { PerfilComponent } from './components/perfil/perfil-components/perfil.component';
 import { RegistrarseComponent } from './components/registrarse/registrarse.component';
-import { SalaComponent } from './components/sala/sala.component';
+import { SalaComponent } from './components/sala/sala-component/sala.component';
 import { DashboardComponent } from './general/dashboard/dashboard.component';
 
 const routes: Routes = [{

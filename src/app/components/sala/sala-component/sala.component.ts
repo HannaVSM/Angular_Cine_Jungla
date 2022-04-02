@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { SillaTM } from 'src/app/interfaces/sillaTM.interface';
 import { SillaService } from 'src/app/services/silla.service';
 
 @Component({
-  selector: 'app-funcion-pelicula',
-  templateUrl: './funcion-pelicula.component.html',
-  styleUrls: ['./funcion-pelicula.component.css']
+  selector: 'app-sala',
+  templateUrl: './sala.component.html',
+  styleUrls: ['./sala.component.css']
 })
-export class FuncionPeliculaComponent implements OnInit {
+export class SalaComponent implements OnInit {
 
   constructor(private sillaService: SillaService) {
     this.getSillas(458, "general");

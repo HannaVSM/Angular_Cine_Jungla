@@ -1,19 +1,12 @@
 <!-- SECCION DONDE SE UBICA LA CARTELERA DE PELICULAS -->
 <div class="cartelera">
-
-
     <div class="product--grid">
-
-
         <div *ngFor="let pelicula of peliculas">
-            <a (click)="irFuncionPelicula()" class="nav-link">
-
+            <a (click)="irFuncionPelicula(pelicula.codigoPelicula)" class="nav-link">
                 <img [src]="pelicula.direccionPortada" alt="image">
-
                 <p>{{pelicula.nombrePelicula}}</p>
                 <p class="info">Duración de la pelicula: {{pelicula.duracionPelicula}} min.</p>
             </a>
         </div>
     </div>
-
 </div>

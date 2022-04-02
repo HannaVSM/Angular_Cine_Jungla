@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CompraComponent } from '../components/compra/compra-components/compra.component';
 
 const routes: Routes = [
   {
@@ -10,7 +11,8 @@ const routes: Routes = [
         loadChildren: () => import('../components/cartelera/cartelera.module').then( m => m.CarteleraModule)
       },
        {
-         path: 'compra',
+         path: 'compra/:id',
+         component:CompraComponent,
          loadChildren: () => import('../components/compra/compra.module').then( m => m.CompraModule)
        },
       {
@@ -22,18 +24,9 @@ const routes: Routes = [
          loadChildren: () => import('../components/perfil/perfil.module').then( m => m.PerfilModule)
        },
        {
-         path: 'funcion-pelicula',
-         loadChildren: () => import('../components/funcion-pelicula/funcion-pelicula.module').then( m => m.FuncionPeliculaModule)
-       },
-       {
         path: 'snacks',
         loadChildren: () => import('../components/snacks/snacks.module').then( m => m.SnacksModule)
       },
-
-
-
-
-
       {
         path: '**', redirectTo: 'cartelera'
       },

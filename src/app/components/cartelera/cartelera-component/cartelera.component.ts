@@ -18,8 +18,8 @@ export class CarteleraComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  irFuncionPelicula(){
-    this.router.navigate(['default/dashboard/funcion-pelicula']);
+  irFuncionPelicula(id: number){
+    this.router.navigate(['default/dashboard/compra/1/sala']);
   }
 
   peliculas: Pelicula[] = [];

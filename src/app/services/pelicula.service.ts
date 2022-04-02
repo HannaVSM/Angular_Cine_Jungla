@@ -17,8 +17,8 @@ export class PeliculaService{
       return this.http.get<Pelicula[]>(url);
   }
 
-  getPeliculaById(id: any):Observable<Pelicula[]>{
+  getPeliculaById(id: any):Observable<Pelicula>{
     const url = `${ this.baseUrlBack }`+id;
-      return this.http.get<Pelicula[]>(url);
+      return this.http.get<Pelicula>(url);
   }
 }

@@ -1,0 +1,26 @@
+.pelicula {
+  margin: 1.5rem;
+  width: 20rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ddd;
+  background: #fff;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.pelicula img{
+  margin: 0.5rem;
+  width: 19rem;
+  height: 28rem;
+  border-radius: 10px;
+}
+
+.pelicula p{
+  margin: 0.5rem;
+  color:#3d3935;
+}
+
+.info{
+  margin: 0.5rem;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
