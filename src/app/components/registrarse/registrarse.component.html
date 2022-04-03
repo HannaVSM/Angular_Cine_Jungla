@@ -18,7 +18,7 @@
 
     <div class="pagos">
 
-        <form class="formulario-boleta">
+        <form class="formulario-boleta" [formGroup]="registro" (ngSubmit)="registrar()">
 
             <h1> Registrar Cuenta </h1>
             <img src="../../../assets/images/logoCine.png" alt="logo del cine">

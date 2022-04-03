@@ -9,33 +9,27 @@
     <title>Inicio de sesion</title>
     <link rel="icon" href="../../../assets/images/logoCine.png">
     <script src="https://kit.fontawesome.com/0b65db3c48.js" crossorigin="anonymous"></script>
-
-
-
 </head>
-
 <body>
-
     <!-- FORMULARIO -->
     <div class="pagos">
-
-        <form class="formulario-boleta">
-
-            <h1> Inicio de sesion </h1>
+        <form class="formulario-boleta" [formGroup]="sesion" (ngSubmit)="comprobacion()">
+          <div class="title">
+            <h2> INICIO DE SESION </h2> <br>
             <img src="../../../assets/images/logoCine.png" alt="logo del cine">
-
+          </div>
 
             <div class="elemento1">
 
-                <label for="correo"> Correo Electronico </label>
-                <input id="correo" type="text" name="correo">
+                <label for="correo"> Username </label>
+                <input id="correo" type="text" name="correo" formControlName="username">
 
             </div>
 
             <div class="elemento2">
 
                 <label for="contraseña"> Contraseña </label>
-                <input id="contraseña" type="password" name="contraseña">
+                <input id="contraseña" type="password" name="contraseña" formControlName="password">
 
             </div>
 
@@ -44,16 +38,9 @@
             <p> ¿No tienes una cuenta?</p>
 
             <nav>
-                <a (click)="irRegistro()" class="nav-link">Registrarse</a>
+                <a (click)="irRegistro()" class="nav-link">Registrate</a>
             </nav>
-
-
         </form>
-
-
     </div>
-
-
 </body>
-
 </html>

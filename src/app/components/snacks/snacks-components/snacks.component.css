@@ -1,121 +1,33 @@
-/* CUERPO */
-
-.snacks {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* margin: auto; */
-    padding: 100px;
-    grid-gap: 70px;
-    place-items: center;
-    background-color: #D9D9D9;
-
+/* .snacks{
+  display: flex;
+  align-items: center;
+} */
+.product--grid{
+  display: flex;
+  flex-wrap: wrap;
+  background: #D9D9D9;
+}
+.product--grid  div{
+  margin: 0.5rem;
+  width: 19rem;
+}
+.product--grid img{
+      width: 10rem;
+      height: 12rem;
+      border-radius: 10px;
+}
+.product--grid h2,p{
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 0;
+  color:#3d3935;
 }
 
-.snacks .snack1 p {
-    text-align: center;
-    color: #3d3935;
-    font-weight: 700;
-    font-size: 1.3rem;
+.product--grid p{
+  font-weight: lighter;
 }
 
-.snacks .snack2 p {
-    text-align: center;
-    color: #3d3935;
-    font-weight: 700;
-    font-size: 1.3rem;
-}
-
-.snacks .snack3 p {
-    text-align: center;
-    color: #3d3935;
-    font-weight: 700;
-    font-size: 1.3rem;
-}
-
-.snacks .snack4 p {
-    text-align: center;
-    color: #3d3935;
-    font-weight: 700;
-    font-size: 1.3rem;
-}
-
-.snacks .snack5 p {
-    text-align: center;
-    color: #3d3935;
-    font-weight: 700;
-    font-size: 1.3rem;
-}
-
-.snacks .snack6 p {
-    text-align: center;
-    color: #3d3935;
-    font-weight: 700;
-    font-size: 1.3rem;
-}
-
-.snacks .snack7 p {
-    text-align: center;
-    color: #3d3935;
-    font-weight: 700;
-    font-size: 1.3rem;
-}
-
-.snacks .snack8 p {
-    text-align: center;
-    color: #3d3935;
-    font-weight: 700;
-    font-size: 1.3rem;
-}
-
-.snacks .snack9 p {
-    text-align: center;
-    color: #3d3935;
-    font-weight: 700;
-    font-size: 1.3rem;
-}
-
-.snacks .snack10 p {
-    text-align: center;
-    color: #3d3935;
-    font-weight: 700;
-    font-size: 1.3rem;
-}
-
-.snacks .snack11 p {
-    text-align: center;
-    color: #3d3935;
-    font-weight: 700;
-    font-size: 1.3rem;
-}
-
-.snacks .snack12 p {
-    text-align: center;
-    color: #3d3935;
-    font-weight: 700;
-    font-size: 1.3rem;
-}
-
-
-/* PARAMETROS PARA RESPONSIVE */
-
-
-@media screen and (max-widht: 700px) {
-    .pie-pagina .grupo-1 {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-
-    }
-}
-
-
-@media (max-width:700px) {
-    header {
-        flex-direction: column;
-    }
-
-    nav {
-        padding: 10px 0px;
-    }
+.info{
+  font-size: 1.1rem;
+  font-weight: 400;
 }

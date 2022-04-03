@@ -1,8 +1,8 @@
 /* HEADER */
 
 body{
-    font-family: Impact;
     margin: 0;
+    color:#383531;
 }
 
 a{
@@ -15,16 +15,22 @@ a{
 /* INICIO DE SESION */
 
 .pagos{
-
     text-align: center;
-    background-color: black;
     min-height: 100vh;
     }
-    
+
+.title{
+  background: #036635;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.title h2{
+ color: white;
+}
+
     .pagos .formulario-boleta{
-        background-color: silver;
-        text-align: center; 
-        padding: 30px 30px 30px 30px;
+        text-align: center;
+        padding-bottom: 40px;
         width: 100%;
         max-width: 300px;
         border-radius: 10px;
@@ -32,40 +38,49 @@ a{
         top: 90px;
         margin:auto;
         z-index: 1;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 15px #ddd;
+        background: #fff;
+        font-weight: 600;
     }
 
     .pagos .formulario-boleta label{
-       
+
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 20px;
         margin-right: 2px;
         padding-top: 5px;
-        
+
     }
-    
+
     .pagos .formulario-boleta input{
-       
-      border: 2px solid grey;
+
+      border: 2px solid #3AA677;
+      background: #7ECFAC;
       height: 30px;
+      margin-bottom: 20px;
       font-size: 16px;
       width: 90%;
       padding: 5px 12px;
       border-radius: 5px;
-        
+
     }
 
     .pagos .formulario-boleta .btn-entrar{
-
-        margin-top: 10px;
+      margin-bottom: 20px;
+      background: #036635;
     }
 
     .pagos .formulario-boleta a{
-        color:  black;
+      color:#3d3935
     }
 
+    .pagos .formulario-boleta p{
+      margin-bottom: 10px;
+  }
+
     .pagos .formulario-boleta a:hover{
-        color:  white;
+        color:  #036635;
     }
 
     .pagos .formulario-boleta img{
@@ -74,29 +89,30 @@ a{
         margin-bottom: 7px;
 
     }
-    
-    
-   
-    
+
+
+
+
     .pagos .formulario-tarjetas label{
-    
+
         display: block;
         margin-bottom: 5px;
         margin-right: 2px;
-        
+
     }
-    
+
     .pagos .formulario-tarjetas input,.btn-entrar{
-    
-     border: 2px solid gray;
+
+      background: 55;
+      border: 2px solid #02522A;
       height: 50px;
       font-size: 16px;
       width: 90%;
       padding: 5px 12px;
       border-radius: 5px;
-    
+
     }
-    
+
     .formulario-tarjetas input{
         margin-bottom: 20px;
         text-transform: uppercase;
@@ -113,16 +129,16 @@ a{
             grid-template-columns: repeat(1,1fr);
             grid-gap: 30px;
             padding: 35px 0px;
-        
+
         }
     }
-    
-    
+
+
     @media (max-width:700px){
         header{
             flex-direction: column;
         }
-    
+
         nav{
             padding: 10px 0px;
         }

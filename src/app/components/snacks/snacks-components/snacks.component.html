@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,28 +12,35 @@
 
 
 
-</head>
+</head> -->
 
-<body>
-
-    <div class="snacks">
+  <div class="snacks">
+    <div class="product--grid">
+        <div *ngFor="let snack of snacks">
+            <img [src]="snack.direccionImagen" alt="image">
+            <h2>{{snack.nombreSnack}}</h2>
+            <p>Precio unitario: ${{snack.precioUnitario}}</p>
+        </div>
+    </div>
+</div>
+    <!-- <div class="snacks">
 
         <div class="snack1">
-    
+
             <a href="#" class="nav-link">
                 <img src="../../../../assets/images/palomitasClasicas.png" alt="poster de pelicula"
             title="Avengers"
             width="310px"
             height="390px">
-                
+
             </a>
             <p> Palomitas clasicas </p>
-    
-            
+
+
         </div>
-    
+
         <div class="snack2">
-    
+
             <a href="#" class="nav-link">
                 <img src="../../../../assets/images/palomitas-dulces.png" alt="poster de pelicula"
             title="Avengers"
@@ -42,9 +49,9 @@
             </a>
             <p> Palomitas dulces </p>
         </div>
-    
+
         <div class="snack3">
-    
+
             <a href="#" class="nav-link">
                 <img src="../../../../assets/images/palomitas-mixtas.png" alt="poster de pelicula"
             title="Avengers"
@@ -54,7 +61,7 @@
             <p> Palomitas mixtas </p>
         </div>
         <div class="snack4">
-    
+
             <a href="#" class="nav-link">
                 <img src="../../../../assets/images/perrito.png" alt="poster de pelicula"
             title="Avengers"
@@ -64,7 +71,7 @@
             <p>  Perrito Caliente </p>
         </div>
         <div class="snack5">
-    
+
             <a href="#" class="nav-link">
                 <img src="../../../../assets/images/sandwich.png"alt="poster de pelicula"
             title="Avengers"
@@ -73,9 +80,9 @@
             </a>
             <p> Sandwich clasico </p>
         </div>
-    
+
         <div class="snack6">
-    
+
             <a href="#" class="nav-link">
                 <img src="../../../../assets/images/nachos.png"alt="poster de pelicula"
             title="Avengers"
@@ -84,9 +91,9 @@
             </a>
             <p> Nachos con queso chedar </p>
         </div>
-    
+
         <div class="snack7">
-    
+
             <a href="#" class="nav-link">
                 <img src="../../../../assets/images/chocolatina.png"alt="poster de pelicula"
             title="Avengers"
@@ -95,9 +102,9 @@
             </a>
             <p> Chocolatina </p>
         </div>
-    
+
         <div class="snack8">
-    
+
             <a href="#" class="nav-link">
                 <img src="../../../../assets/images/gaseosa.png"alt="poster de pelicula"
             title="Avengers"
@@ -106,9 +113,9 @@
             </a>
             <p> Gaseosa </p>
         </div>
-    
+
         <div class="snack9">
-    
+
             <a href="#" class="nav-link">
                 <img src="../../../../assets/images/malteada.png"alt="poster de pelicula"
             title="Avengers"
@@ -117,9 +124,9 @@
             </a>
             <p> Malteada </p>
         </div>
-    
+
         <div class="snack10">
-    
+
             <a href="#" class="nav-link">
                 <img src="../../../../assets/images/combo-tarzan.png"alt="poster de pelicula"
             title="Avengers"
@@ -128,9 +135,9 @@
             </a>
             <p> Combo Tarzan  </p>
         </div>
-    
+
         <div class="snack11">
-    
+
             <a href="#" class="nav-link">
                 <img src="../../../../assets/images/como-george.png"alt="poster de pelicula"
             title="Avengers"
@@ -139,9 +146,9 @@
             </a>
             <p> Combo george de la Jungla </p>
         </div>
-    
+
         <div class="snack12">
-    
+
             <a href="#" class="nav-link">
                 <img src="../../../../assets/images/combo-mowgli.png"alt="poster de pelicula"
             title="Avengers"
@@ -150,13 +157,10 @@
             </a>
             <p> Combo Mowgli </p>
         </div>
-        
-    </div>
 
-
-</body>
-
-</html>
+    </div> -->
+<!--
+</html> -->
 
 
 

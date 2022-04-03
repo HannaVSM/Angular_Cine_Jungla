@@ -5,11 +5,15 @@
   right: 35%;
   bottom: 40%;
   position: absolute;
-  
+
 }
 .sala h1{
   text-align: center;
-  
+
+}
+
+.sala button::after{
+  background-color: #004D2B;
 }
 .contenedorSilla{
   display: inline;

@@ -10,10 +10,10 @@ const routes: Routes = [
         path: 'sala',
         loadChildren: () => import('../sala/sala.module').then( m => m.SalaModule)
       },
-      // {
-      //   path: 'funcion-pelicula',
-      //   loadChildren: () => import('../funcion-pelicula/funcion-pelicula.module').then( m => m.FuncionPeliculaModule)
-      // }
+      {
+        path: 'funcion-pelicula',
+        loadChildren: () => import('../funcion-pelicula/funcion-pelicula.module').then( m => m.FuncionPeliculaModule)
+      }
     ]
   },
 

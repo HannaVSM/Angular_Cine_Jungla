@@ -27,12 +27,12 @@ export class CompraComponent implements OnInit {
     this.peliculaService.getPeliculaById(idPelicula).subscribe(data =>{
       this.pelicula=data;
       console.log(this.pelicula);
-    })
+    });
   }
   getFunciones(cgMultiplex: number, cgPelicula: number, fecha: string){
     this.funcionService.getFuncionesByPeliculaAndFecha(cgMultiplex, cgPelicula,fecha).subscribe(data =>{
       this.funcion = data;
       console.log(data);
-    })
+    });
   }
 }

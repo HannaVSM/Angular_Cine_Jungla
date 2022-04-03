@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,13 +26,14 @@ import{MatTabsModule} from '@angular/material/tabs';
      IniciarSesionComponent,
     // PagoComponent,
     // PerfilComponent,
-    // RegistrarseComponent,
+     RegistrarseComponent,
     // SalaComponent,
     // DashboardComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
