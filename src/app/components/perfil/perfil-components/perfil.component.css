@@ -5,57 +5,18 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-body{
-    background: #d4d4d4;
-    font-family: sans-serif;
-}
-.wrap{
+
+.container-perfil{
     width: 800px;
-    max-width: 90%;
+    height: 300px;
     margin: 30px auto;
-
-}
-ul.tabs{
-    width: 100%;
-    background: #363636;
-    list-style: none;
-    display: flex;
-
-}
-ul.tabs li{
-    width: 18%;
 }
 
-ul.tabs li a{
-    color: #fff;
-    text-decoration: none;
-    font-size:16px ;
-    display: block;
-    padding:20px 0px;
-    text-align: center;
 
-}
 
-.active{
-    background: #006241;
-}
 
-ul.tabs li a .tab-text{
-    margin-left: 8px;
-}
-.secciones{
-    width: 100%;
-    background: #fff;
-}
-.secciones article{
-    padding: 30px;
-}
-.secciones article p{
-    text-align: justify;
-}
- /* INFORMACION DE USUARIO */
-
- .secciones .formulario-boleta{
+/* FORUMLARIO MI CUENTA */
+.container-perfil .formulario-boleta{
     background-color: #fff;
     text-align: center; 
     padding: 30px 30px 30px 30px;
@@ -66,41 +27,64 @@ ul.tabs li a .tab-text{
     margin:auto;
     z-index: 1;
     margin-bottom: 50px;
- }
- .secciones .formulario-boleta label{
-       
+}
+.container-perfil .formulario-boleta label{
     display: block;
     margin-bottom: 5px;
     margin-right: 2px;
     padding-top: 5px;
     
 }
-.secciones .formulario-boleta input{
-       
+.container-perfil .formulario-boleta input{
     border: 2px solid grey;
     height: 30px;
     font-size: 16px;
-    width: 60%;
+    /* width: 60%; */
     padding: 5px 12px;
     border-radius: 5px;
-      
-  }
-.secciones  .btn-salir{
+
+}
+.container-perfil .formulario-boleta .btn-salir{
     margin-top: 10px;
     border: 2px solid gray;
     font-size: 16px;
+    padding-top: 5px;
+}
+.container-perfil .formulario-boleta p{
+    padding-top: 7px;
 
 }
 
-.secciones .tab2 label{
+/* FORMUOLARIO MIS FACTURAS */
+
+.container-perfil .formulario-factura{
+    background-color: #fff;
+    text-align: center; 
+    padding: 30px 30px 30px 30px;
+    width: 100%;
+     max-width: 600px 100px; 
+    border-radius: 10px;
+    position:relative;
+    margin:auto;
+    z-index: 1;
+    margin-bottom: 50px;
+}
+.container-perfil .formulario-factura label{
+    display: block;
     margin-bottom: 5px;
     margin-right: 2px;
     padding-top: 5px;
     
 }
+.container-perfil .formulario-factura input{
+    border: 2px solid grey;
+    height: 30px;
+    font-size: 16px;
+    /* width: 60%; */
+    padding: 5px 12px;
+    border-radius: 5px;
 
-
-
+}
 
 
 @media screen and (max-width:700px) {

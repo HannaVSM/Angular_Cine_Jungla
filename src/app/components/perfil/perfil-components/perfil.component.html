@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,68 +9,177 @@
     <title>Perfil</title>
 
 </head>
-<body>
-    <div class="wrap">
-        <ul class="tabs">
-            <li><a href="#tab1"><span class="tab-text">Mi perfil</span></a></li>
-            <li><a href="#tab2"><span class="tab-text" ></span>Mis Puntos</a></li>
-            <li><a href="#tab3"><span class="tab-text"></span>Cerrar Sesion</a></li>
 
-        </ul>
-        <div class="secciones">
-            <article id="tab1">
-               <h1>Informacion general</h1>
-                <!--FORMULARIO  -->
+<body>
+
+    <div class="container-perfil">
+        <mat-tab-group mat-align-tabs="center">
+            <mat-tab [label]="'Mis datos'">
                 <form class="formulario-boleta">
 
                     <div class="elemento1">
-                
-                        <label for="nombre-usuario" > Nombre de usuario</label>   
-                        <input id="nombre-usuario" type="text" disabled=""  name="nombre-usuario"> 
-                
+
+                        <label for="nombre-usuario"> Nombre de usuario</label>
+                        <input id="nombre-usuario" type="text" disabled="" name="nombre-usuario">
+
                     </div>
-                
-                  <div class="elemento2">
-                
-                    <label for="nombre-completo" > Nombre Completo </label>   
-                    <input id="nombre-completo" type="text" disabled=""  name="nombre-completo">
-                
-                   </div>
-                   <div class="elemento3">
-                
-                    <label for="documento-identidad" > Documento de identidad </label>   
-                    <input id="documento-identidad" type="text" disabled=""   name="documento-identidad">
-                
-                   </div>
-                    
-                   
-        
+
+                    <div class="elemento2">
+
+                        <label for="nombre-completo"> Nombre Completo </label>
+                        <input id="nombre-completo" type="text" disabled="" name="nombre-completo">
+
+                    </div>
+                    <div class="elemento3">
+
+                        <label for="documento-identidad"> Documento de identidad </label>
+                        <input id="documento-identidad" type="text" disabled="" name="documento-identidad">
+
+
+                    </div>
+                    <p>Presiona el boton para cerrar la Sesion</p>
+                    <!--BOTON DE CERRAR SESION -->
+                    <button type="submit" class="btn-salir"> Cerrar sesion </button>
+
                 </form>
 
-            </article>
-            <article id="tab2">
+            </mat-tab>
+            <mat-tab [label]="'Mis Puntos'">
                 <h1>Sobre mis Puntos</h1>
                 <p>Recuerda que con 100 puntos puedes asistir a una pelicula en silleteria general totalmente gratis</p>
-    
-                <label for="puntos"> Cantidad de puntos </label>   
-                <input id="puntos" type="text"  name="puntos">
-                
-                <label for="puntos-vencimiento"> vencimiento de puntos </label>   
-                <input id="puntos-vencimiento" type="text"  name="puntos">
-    
- 
-             </article>
 
-             <article id="tab3">
-                <h1>Cerrar sesion</h1>
-                <p>Presiona el boton para cerrar la Sesion</p>
-                 <!--BOTON DE CERRAR SESION -->
-                 <button type="submit" class="btn-salir"> Cerrar sesion </button>
+                <label for="puntos"> Cantidad de puntos </label>
+                <input id="puntos" type="text" name="puntos">
+
+                <label for="puntos-vencimiento"> vencimiento de puntos </label>
+                <input id="puntos-vencimiento" type="text" name="puntos">
+
+            </mat-tab>
+            <mat-tab [label]="'Mis Facturas'">
+                <form class="formulario-factura">
+
+                    <!-- <div class="elemento1">
             
-             </article>
- 
-        </div>
+                    <label for="nombre-usuario" > Nombre de usuario</label>   
+                    <input id="nombre-usuario" type="text" disabled=""  name="nombre-usuario"> 
+            
+                </div> -->
+
+                    <div class="elemento2">
+
+                        <label for="nombre-completo"> Nombre de Cliente </label>
+                        <input id="nombre-completo" type="text" disabled="" name="nombre-completo">
+
+                    </div>
+                    <div class="elemento3">
+
+                        <label for="documento-identidad"> Documento de identidad </label>
+                        <input id="documento-identidad" type="text" disabled="" name="documento-identidad">
+
+
+                    </div>
+                    <div class="elemento4">
+
+                        <label for="factura-fecha"> Fecha de Expedición de Factura </label>
+                        <input id="factura-fecha" type="text" disabled="" name="factura-fecha">
+
+
+                    </div>
+                    <div class="elemento5">
+
+                        <label for="multiplex"> Multiplex </label>
+                        <input id="multiplex" type="text" disabled="" name="multiplex">
+
+
+                    </div>
+                    <div class="elemento6">
+
+                        <label for="pelicula"> Pelicula </label>
+                        <input id="pelicula" type="text" disabled="" name="pelicula">
+
+
+                    </div>
+                    <div class="elemento7">
+
+                        <label for="fecha"> Fecha de la Función </label>
+                        <input id="fecha" type="text" disabled="" name="fecha">
+
+
+                    </div>
+                    <div class="elemento8">
+
+                        <label for="hora"> Hora de la Función </label>
+                        <input id="hora" type="text" disabled="" name="hora">
+
+
+                    </div>
+                    <div class="elemento9">
+
+                        <label for="doblada"> Doblada </label>
+                        <input id="doblada" type="text" disabled="" name="doblada">
+
+
+                    </div>
+                    <div class="elemento10">
+
+                        <label for="sala"> Nombre de sala </label>
+                        <input id="sala" type="text" disabled="" name="sala">
+
+
+                    </div>
+                    <div class="elemento10">
+
+                        <label for="sillas"> Cantidad de sillas compradas </label>
+                        <input id="sillas" type="text" disabled="" name="sillas">
+
+
+                    </div>
+                    <div class="elemento11">
+
+                        <label for="sillas-precio"> Precio total de sillas compradas </label>
+                        <input id="sillas-precio" type="text" disabled="" name="sillas-precio">
+
+
+                    </div>
+                    <div class="elemento12">
+
+                        <label for="snacks"> Cantidad de snacks comprados </label>
+                        <input id="snacks" type="text" disabled="" name="snacks">
+
+
+                    </div>
+                    <div class="elemento13">
+
+                        <label for="snacks-precio"> Precio total de snacks comprados </label>
+                        <input id="snacks-precio" type="text" disabled="" name="snacks-precio">
+
+
+                    </div>
+                    <div class="elemento14">
+
+                        <label for="puntos"> Puntos redimidos </label>
+                        <input id="puntos" type="text" disabled="" name="puntos">
+
+
+                    </div>
+                    <div class="elemento15">
+
+                        <label for="total-pagar"> Total a pagar </label>
+                        <input id="total-pagar" type="text" disabled="" name="total-pagar">
+
+
+                    </div>
+
+
+
+                </form>
+
+            </mat-tab>
+
+        </mat-tab-group>
+
     </div>
-   
+
 </body>
+
 </html>

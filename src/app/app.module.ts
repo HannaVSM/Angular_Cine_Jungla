@@ -16,6 +16,7 @@ import { DashboardComponent } from './general/dashboard/dashboard.component';
 import { SnacksComponent } from './components/snacks/snacks-components/snacks.component';
 import { CargarScriptsService } from './cargar-scripts.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import{MatTabsModule} from '@angular/material/tabs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   providers: [
     CargarScriptsService
