@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SillaTM } from 'src/app/interfaces/sillaTM.interface';
 import { SillaService } from 'src/app/services/silla.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-funcion-pelicula',
@@ -9,8 +10,13 @@ import { SillaService } from 'src/app/services/silla.service';
 })
 export class FuncionPeliculaComponent implements OnInit {
 
-  constructor(private sillaService: SillaService) {
+  constructor(private sillaService: SillaService , private router:Router) {
     this.getSillas(458, "general");
+   }
+
+   irSala(){
+    this.router.navigate(['default/dashboard/compra/1/sala']);
+
    }
 
   ngOnInit(): void {

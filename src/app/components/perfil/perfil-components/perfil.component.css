@@ -7,9 +7,15 @@
 }
 
 .container-perfil{
+  
+    position: relative;
     width: 800px;
     height: 300px;
-    margin: 30px auto;
+    margin: 70px auto;
+    background-color:#D9D9D9;;
+
+
+
 }
 
 
@@ -62,12 +68,12 @@
     text-align: center; 
     padding: 30px 30px 30px 30px;
     width: 100%;
-     max-width: 600px 100px; 
+     max-width: 300px 100px; 
     border-radius: 10px;
-    position:relative;
+    bottom: 30%;
     margin:auto;
-    z-index: 1;
-    margin-bottom: 50px;
+   
+
 }
 .container-perfil .formulario-factura label{
     display: block;

@@ -28,6 +28,10 @@ const routes: Routes = [
         loadChildren: () => import('../components/snacks/snacks.module').then( m => m.SnacksModule)
       },
       {
+        path: 'funcion-pelicula',
+        loadChildren: () => import('../components/funcion-pelicula/funcion-pelicula.module').then( m => m.FuncionPeliculaModule)
+      },
+      {
         path: '**', redirectTo: 'cartelera'
       },
     ]

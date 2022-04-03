@@ -1,13 +1,22 @@
+
 .sala{
-  width: 350px;
+  width: 450px;
+  left: 40%;
+  right: 35%;
+  bottom: 40%;
+  position: absolute;
+  
+}
+.sala h1{
+  text-align: center;
+  
 }
 .contenedorSilla{
   display: inline;
-
 }
 .silla{
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: #3A084D;
   color: white;
   border-radius: 10px;

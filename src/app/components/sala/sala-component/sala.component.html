@@ -1,4 +1,6 @@
+
 <section class="sala">
+  <h1 class="pantalla"> PANTALLA</h1>
   <div *ngFor="let silla of sillasTM" class="contenedorSilla">
     <button [disabled]="!silla.disponibilidadSilla"  class="silla">{{silla.ubicacionSilla}}</button>
   </div>

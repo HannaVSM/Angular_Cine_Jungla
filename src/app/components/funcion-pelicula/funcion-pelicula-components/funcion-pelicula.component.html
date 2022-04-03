@@ -1,1 +1,96 @@
-<p>El codigazo de Juan</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Función</title>
+</head>
+<body>
+
+    <div class="container-general" style="padding: 3em 3em">
+
+        <mat-accordion>
+            <mat-expansion-panel class="panel-multiplex">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Paso 1</mat-panel-title>
+                    <mat-panel-description>Selecciona un Multiplex</mat-panel-description>
+                </mat-expansion-panel-header>
+                <div class="contenido-multiplex">
+                    <p> AQUI SE ESCOGEN LOS Multiplex</p>
+                    <div class="select">
+                        <select name="format" id="format">
+                            <option selected disabled> Selecciona un multiplex </option>
+                            <option value="plaza-americas">Plaza de las Américas</option>
+                            <option value="plaza-central">Plaza Central</option>
+                            <option value="titan-plaza">Titán Plaza</option>
+                            <option value="unicentro">Unicentro</option>
+                            <option value="embajador">Embajador</option>
+                            <option value="gran-estacion">Gran Estación</option>
+            
+                        </select>
+            
+                    </div>
+    
+                </div>
+            
+        
+            </mat-expansion-panel>
+
+            <mat-expansion-panel class="panel-fecha">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Paso 2</mat-panel-title>
+                    <mat-panel-description>Selecciona un dia</mat-panel-description>
+                </mat-expansion-panel-header>
+                <div class="contenido-fecha">
+                    <p> DATE PICKER MATERIAL</p>
+    
+                </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel class="panel-hora">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Paso 3</mat-panel-title>
+                    <mat-panel-description>Selecciona una hora disponible</mat-panel-description>
+                </mat-expansion-panel-header>
+                <div class="contenido-hora">
+                    <p> PREGUNTAR A JANA </p>
+    
+                </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel class="panel-silla">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Paso 4</mat-panel-title>
+                    <mat-panel-description>Selecciona un tipo de silla</mat-panel-description>
+                </mat-expansion-panel-header>
+                <div class="contenido-silla">
+                    <p> RADIO BUTTON MATERIAL</p>
+    
+                </div>
+            </mat-expansion-panel>
+
+
+
+
+        
+        </mat-accordion>
+
+        <a (click)="irSala()" class="btn-neon">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+            Escoger sillas
+        </a>
+
+
+      
+    
+    
+    </div>
+
+
+    
+</body>
+</html>
+

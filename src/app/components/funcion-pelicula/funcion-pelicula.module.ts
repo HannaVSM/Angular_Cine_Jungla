@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { CompraComponent } from '../compra/compra-components/compra.component';
 import { FuncionPeliculaComponent } from './funcion-pelicula-components/funcion-pelicula.component';
 import { FuncionPeliculaRoutingModule } from './funcion-prelicula.module';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { FuncionPeliculaRoutingModule } from './funcion-prelicula.module';
   imports: [
     CommonModule,
     FormsModule,
-    FuncionPeliculaRoutingModule
+    FuncionPeliculaRoutingModule,
+    MatExpansionModule
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
