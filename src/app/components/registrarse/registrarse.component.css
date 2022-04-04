@@ -1,80 +1,38 @@
-/* HEADER */
-header{
-    display: flex;
-    min-width:70px;
-    background-color: black;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-body{
-    font-family: Impact;
-    margin: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-body,html{
-
-    margin: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-
-
-}
-
-
-a{
-    text-decoration: none;
-    color:#036635;
-}
-
-nav a{
-padding-right: 10px;
-}
-
-nav a:hover{
-color: white;
-}
-
-
-.logo{
-    display: flex;
-    align-items: center;
-}
-.logo img{
-    height: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-/* REGISTRARSE */
 
 .pagos{
 
     text-align: center;
-    background-color: black;
+    background-color: #fff;
     min-height: 100vh; 
     
     }
+
+    .title{
+        background: #036635;
+        margin-bottom: 20px; 
+        padding: 10px;
+     
+    }
+    .title h2{
+        color: white;
+       }
     
     .pagos .formulario-boleta{
-        background-color: silver;
-        text-align: center; 
-        padding: 30px 30px 30px 30px;
+
+        text-align: center;
+        padding-bottom: 40px;
         width: 100%;
         max-width: 300px;
         border-radius: 10px;
         position:relative;
-        top: 50px;
+        top: 90px;
         margin:auto;
         z-index: 1;
-        max-height: 600px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 15px #ddd;
+        background: #fff;
+        font-weight: 600;
+        border:solid #ddd;
         
     }
 
@@ -84,12 +42,14 @@ color: white;
         margin-bottom: 5px;
         margin-right: 2px;
         padding-top: 10px;
+        color: #3d3935;
         
     }
     
     .pagos .formulario-boleta input{
        
-      border: 2px solid grey;
+      border: 2px solid #3AA677;
+      background: #7ECFAC;
       height: 30px;
       font-size: 16px;
       width: 90%;
@@ -104,11 +64,11 @@ color: white;
     }
 
     .pagos .formulario-boleta a{
-        color:  black;
+        color:  #3d3935;
     }
 
     .pagos .formulario-boleta a:hover{
-        color:  white;
+        color:  #3AA677;
     }
 
     .pagos .formulario-boleta img{
@@ -117,10 +77,7 @@ color: white;
         margin-bottom: 7px;
 
     }
-    
-    
-   
-    
+     
     .pagos .formulario-tarjetas label{
     
         display: block;
@@ -136,6 +93,7 @@ color: white;
       width: 90%;
       padding: 5px 12px;
       border-radius: 5px;
+      background: #036635;
     
     }
     

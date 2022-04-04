@@ -42,6 +42,7 @@ a{
         box-shadow: 0 0 15px #ddd;
         background: #fff;
         font-weight: 600;
+        border:solid #ddd;
     }
 
     .pagos .formulario-boleta label{

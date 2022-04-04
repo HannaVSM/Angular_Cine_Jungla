@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Cliente } from 'src/app/interfaces/cliente.interface';
 import { ClienteService } from 'src/app/services/cliente.service';
 import { CargarScriptsService } from '../../../cargar-scripts.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-perfil',
   templateUrl: './perfil.component.html',
@@ -18,7 +19,7 @@ export class PerfilComponent implements OnInit {
 
   clientes: Cliente[] = [];
 
-  constructor(private clienteService: ClienteService , private _CargaScripts:CargarScriptsService) {
+  constructor(private clienteService: ClienteService , private _CargaScripts:CargarScriptsService,private router:Router) {
   
    }
 
@@ -35,4 +36,12 @@ export class PerfilComponent implements OnInit {
       console.log(data);
     })
   }
+
+  irInicio(){
+    this.router.navigate(['login']);
+  }
+
+
+
+
 }

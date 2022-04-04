@@ -22,6 +22,10 @@ export class FuncionPeliculaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toggle(){
+    
+  }
+
   sillasTM: SillaTM[] = [];
 
   btnDisabled= false;
