@@ -19,7 +19,7 @@ export class CarteleraComponent implements OnInit {
   }
 
   irFuncionPelicula(id: number){
-    this.router.navigate(['default/dashboard/compra/1/sala']);
+    this.router.navigate(['default/dashboard/compra/'+id+'/funcion-pelicula']);
   }
 
   peliculas: Pelicula[] = [];

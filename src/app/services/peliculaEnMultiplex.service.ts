@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import {HttpClient} from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { Observable } from "rxjs";
-import { PeliculaEnMultiplex } from "../interfaces/peliculaEnMultiplex.interface";
+import { Multiplex } from "../interfaces/multiplex.interface";
 
 @Injectable({
   providedIn: 'root'
@@ -14,9 +14,9 @@ export class PeliculaEnMultiplexService{
   constructor(private http:HttpClient) {
   }
 
-  getPeliculaEnMultiplexById(id: any):Observable<PeliculaEnMultiplex[]>{
+  getPeliculaEnMultiplexById(id: any):Observable<Multiplex[]>{
     const url = `${ this.baseUrlBack }`+id;
-      return this.http.get<PeliculaEnMultiplex[]>(url);
+      return this.http.get<Multiplex[]>(url);
   }
 
 }

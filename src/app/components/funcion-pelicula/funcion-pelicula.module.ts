@@ -9,9 +9,6 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatRadioModule} from '@angular/material/radio';
 
-
-
-
 @NgModule({
   declarations: [
     FuncionPeliculaComponent
@@ -23,7 +20,7 @@ import {MatRadioModule} from '@angular/material/radio';
     MatExpansionModule,
     MatDatepickerModule,
     MatRadioModule
-    
+
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })

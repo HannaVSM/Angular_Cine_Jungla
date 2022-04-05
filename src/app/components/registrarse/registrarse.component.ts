@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ClienteService } from 'src/app/services/cliente.service';
 import { FormGroup, FormControl, Validator } from '@angular/forms';
+import { Cliente } from 'src/app/interfaces/cliente.interface';
 
 @Component({
   selector: 'app-registrarse',
@@ -10,17 +11,22 @@ import { FormGroup, FormControl, Validator } from '@angular/forms';
 })
 export class RegistrarseComponent implements OnInit {
 
-  constructor(private route: Router, private clienteService: ClienteService) { }
+  constructor(private router: Router, private clienteService: ClienteService) { }
 
   ngOnInit(): void {
   }
 
   registro =  new FormGroup({
-    username: new FormControl(''),
-    password: new FormControl('')
+    usuarioCliente: new FormControl(''),
+    nombreCliente: new FormControl(''),
+    cedulaCliente: new FormControl(''),
+    passwordCliente: new FormControl('')
   });
 
-  registrar(){
-
+  registrar(form:Cliente){
+    form.puntos = 0;
+    this.clienteService.postCliente(form).subscribe(data =>{
+      this.router.navigate(['default/dashboard/cartelera']);
+    });
   }
 }

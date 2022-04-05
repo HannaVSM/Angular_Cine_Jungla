@@ -17,42 +17,26 @@
     <!-- FORMULARIO -->
 
     <div class="pagos">
-
-        <form class="formulario-boleta" [formGroup]="registro" (ngSubmit)="registrar()">
+        <form class="formulario-boleta" [formGroup]="registro" (ngSubmit)="registrar(registro.value)">
             <div class="title">
-
                 <h2> Registrar Cuenta </h2>
                 <img src="../../../assets/images/logoCine.png" alt="logo del cine">
             </div>
-
-
-
             <div class="elemento0">
-
                 <label for="nombre-usuario"> Nombre de usuario </label>
-                <input id="nombre-usuario" type="text" name="nombre-usuario">
-
+                <input id="nombre-usuario" type="text" formControlName="usuarioCliente">
             </div>
-
             <div class="elemento1">
-
                 <label for="correo"> Nombre Completo </label>
-                <input id="correo" type="text" name="correo">
-
+                <input id="correo" type="text" formControlName="nombreCliente">
             </div>
-
             <div class="elemento2">
-
                 <label for="contraseña"> Documento de identidad </label>
-                <input id="contraseña" type="text" name="contraseña">
-
+                <input id="contraseña" type="text" formControlName="cedulaCliente">
             </div>
-
             <div class="elemento3">
-
                 <label for="contraseña-repeat"> contraseña </label>
-                <input id="contraseña-repeat" type="password" name="contraseña-repeat">
-
+                <input id="contraseña-repeat" type="password" formControlName="passwordCliente">
             </div>
 
             <button type="submit" class="btn-entrar"> Registrarse </button>

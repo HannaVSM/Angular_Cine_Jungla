@@ -7,7 +7,7 @@ const routes: Routes = [
     path: '',
     children: [
       {
-        path: 'sala',
+        path: 'sala/:funcion/:tipoSilla',
         loadChildren: () => import('../sala/sala.module').then( m => m.SalaModule)
       },
       {

@@ -13,7 +13,7 @@ export class FuncionService{
   constructor(private http:HttpClient) {
    }
 
-   getFuncionesByPeliculaAndFecha(cgMultiplex: number, cgPelicula: number, fecha: string):Observable<Funcion[]>{
+   getFuncionesByPeliculaAndFecha(cgMultiplex: any, cgPelicula: any, fecha: string):Observable<Funcion[]>{
     const url = `${ this.baseUrlBack }`+cgMultiplex+"/"+cgPelicula+"/"+fecha;
       return this.http.get< Funcion[]>(url);
   }

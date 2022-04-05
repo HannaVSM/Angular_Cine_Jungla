@@ -16,9 +16,9 @@ export class CompraComponent implements OnInit {
     private activatedRoute: ActivatedRoute) { }
 
   funcion: Funcion [] =[];
-  pelicula!: Pelicula
+  pelicula!: Pelicula;
   ngOnInit(): void {
-    this.getFunciones(2,3,"2022-04-11");
+    // this.getFunciones(2,3,"2022-04-11");
     this.getPelicula();
 
   }
@@ -29,10 +29,10 @@ export class CompraComponent implements OnInit {
       console.log(this.pelicula);
     });
   }
-  getFunciones(cgMultiplex: number, cgPelicula: number, fecha: string){
-    this.funcionService.getFuncionesByPeliculaAndFecha(cgMultiplex, cgPelicula,fecha).subscribe(data =>{
-      this.funcion = data;
-      console.log(data);
-    });
-  }
+  // getFunciones(cgMultiplex: number, cgPelicula: number, fecha: string){
+  //   this.funcionService.getFuncionesByPeliculaAndFecha(cgMultiplex, cgPelicula,fecha).subscribe(data =>{
+  //     this.funcion = data;
+  //     console.log(data);
+  //   });
+  // }
 }

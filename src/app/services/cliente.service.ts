@@ -20,4 +20,9 @@ export class ClienteService{
   const url = `${ this.baseUrlBack }sesion/`+username+"/"+password;
     return this.http.get<Cliente[]>(url);
   }
+
+  postCliente(form: Cliente):Observable<Cliente>{
+    const url = `${ this.baseUrlBack }registrarCliente`;
+    return this.http.post<Cliente>(url, form);
+  }
 }
