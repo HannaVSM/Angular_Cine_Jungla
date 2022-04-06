@@ -15,10 +15,6 @@ const routes: Routes = [
          component:CompraComponent,
          loadChildren: () => import('../components/compra/compra.module').then( m => m.CompraModule)
        },
-      // {
-      //    path: 'pago',
-      //    loadChildren: () => import('../components/pago/pago.module').then( m => m.PagoModule)
-      //  },
        {
          path: 'perfil',
          loadChildren: () => import('../components/perfil/perfil.module').then( m => m.PerfilModule)
