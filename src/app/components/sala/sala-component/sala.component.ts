@@ -50,23 +50,18 @@ export class SalaComponent implements OnInit {
   }
 
   enviarFactura(){
+    let idPelicula = this.activatedRoute.snapshot.paramMap.get('id');
     this.facturaCompraService.postSilla(this.sillasTMenvio).subscribe(data =>{
       console.log(data);
     });
     // this.facturaCompraService.postSnack(this.snacksTMenvio).subscribe(data =>{
     //   console.log(data);
     // });
-    this.router.navigate(['default/dashboard/compra/pago']);
+    this.router.navigate(['default/dashboard/compra/'+idPelicula+'/pago']);
 
     // this.
   }
-  putaFactura(){
-    this.facturaCompraService.getFactura().subscribe(data =>{
-      this.factura = data;
-      console.log(data);
-      console.log(this.factura);
-    });
-  }
+
 
   escogerSnack(snk: SnackTM){
     this.snacksTMenvio.push(snk);

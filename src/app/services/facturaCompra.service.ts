@@ -35,9 +35,10 @@ export class FacturaCompraService{
     let direccion = this.baseUrlBack+"generarFactura";
     return this.http.get<FacturaCompraTM>(direccion);
     }
-  getRedimirPuntos(puntosRedimidos: boolean){
-    let direccion = this.baseUrlBack+"pagoFactura/"+puntosRedimidos;
-    return this.http.get<string>(direccion);
+
+  getRedimirPuntos(){
+    let direccion = this.baseUrlBack+"posibilidadRedimirPuntos";
+    return this.http.get<boolean>(direccion);
   }
 
 

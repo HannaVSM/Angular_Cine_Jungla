@@ -4,25 +4,23 @@
 <h1> CENTRAL DE PAGOS</h1>
 
 
-<form class="formulario-boleta">
-
+<form class="formulario-boleta"  [formGroup]="factura">
+  <fieldset disabled>
     <div class="elemento1">
-
         <label for="multiplex" > Multiplex: </label>
-        <input id="multiplex" type="text" disabled="" name="multiplex">
-
+        <input id="multiplex" formControlName="multiplex">
     </div>
 
   <div class="elemento2">
 
     <label for="pelicula" > Pelicula: </label>
-    <input id="pelicula" type="text" disabled="" name="pelicula">
+    <input id="pelicula" type="text" formControlName="pelicula">
 
    </div>
 
   <div class="elemento3">
     <label for="fecha" > Fecha: </label>
-    <input id="fecha" type="date"  disabled="" name="fecha">
+    <input id="fecha" type="text" formControlName="fechaFuncion">
 
 
 
@@ -31,7 +29,7 @@
 
  <div class="elemento4">
     <label for="hora" > Hora: </label>
-    <input id="hora" type="time"  disabled="" name="hora">
+    <input id="hora" type="text" formControlName="horaFuncion">
 
 
 
@@ -41,31 +39,31 @@
  <div class="elemento5">
 
     <label for="sala" > Sala: </label>
- <input id="sala" type="text"  disabled="" name="sala">
+ <input id="sala" type="text"  formControlName="nombreSala">
 
  </div>
 
 
  <div class="elemento6">
     <label for="silla" > Silla: </label>
-    <input id="silla" type="text" disabled="" name="silla">
+    <input id="silla" type="text"  formControlName="sillas">
  </div>
 
 
  <div class="elemento7">
     <label for="total" > Total a pagar: </label>
-    <input id="total" type="text" disabled="" name="total">
+    <input id="total" type="text" formControlName="totalPago">
 
 
  </div>
 
  <div class="boton">
-    <button type="submit"  class="btn-sillas"> Pagar </button>
+    <button type="submit"  class="btn-sillas" (click)="pagar()"> Pagar </button>
   </div>
-
+</fieldset>
 </form>
 <div class="boton-puntos">
-  <button type="submit"  class="btn-puntos"> Redimir Puntos </button>
+  <button type="button"  class="btn-puntos" [disabled]="sePuede()"> Redimir Puntos </button>
 </div>
 
 </div>

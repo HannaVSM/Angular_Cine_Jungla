@@ -10,7 +10,7 @@ export interface FacturaCompraTM{
     multiplex:string;
     pelicula:string;
     fechaFuncion:Date;
-    horaFuncion:Time;
+    horaFuncion:Date;
     tipoFuncion:string;
     doblada:boolean;
     nombreSala:string;
