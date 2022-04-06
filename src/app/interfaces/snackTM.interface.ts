@@ -4,4 +4,5 @@ export interface SnackTM{
   precioUnitario: number;
   cantidadStock: number;
   cantidadComprada: number;
+  direccionImagen: string;
 }

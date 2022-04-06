@@ -7,13 +7,18 @@ const routes: Routes = [
     path: '',
     children: [
       {
-        path: 'sala/:funcion/:tipoSilla',
+        path: 'sala/:multiplex/:funcion/:tipoSilla',
         loadChildren: () => import('../sala/sala.module').then( m => m.SalaModule)
       },
       {
         path: 'funcion-pelicula',
         loadChildren: () => import('../funcion-pelicula/funcion-pelicula.module').then( m => m.FuncionPeliculaModule)
+      },
+      {
+        path: 'pago',
+        loadChildren: () => import('../pago/pago.module').then( m => m.PagoModule)
       }
+
     ]
   },
 

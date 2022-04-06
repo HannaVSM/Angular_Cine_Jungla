@@ -26,6 +26,7 @@ export class RegistrarseComponent implements OnInit {
   registrar(form:Cliente){
     form.puntos = 0;
     this.clienteService.postCliente(form).subscribe(data =>{
+      console.log(data);
       this.router.navigate(['default/dashboard/cartelera']);
     });
   }

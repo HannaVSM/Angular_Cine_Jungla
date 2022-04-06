@@ -21,7 +21,7 @@ export interface FacturaCompraTM{
     puntosRedimidos:boolean;
     totalPago:number;
 
-    
+
 
 
 

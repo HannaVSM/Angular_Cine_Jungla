@@ -2,6 +2,20 @@
 <section class="sala">
   <h1 class="pantalla"> PANTALLA</h1>
   <div *ngFor="let silla of sillasTM" class="contenedorSilla">
-    <button [disabled]="!silla.disponibilidadSilla"  class="silla" (click)="escogerSilla()">{{silla.ubicacionSilla}}</button>
+    <button [disabled]="!silla.disponibilidadSilla"  class="silla" (click)="escogerSilla(silla)">{{silla.ubicacionSilla}}</button>
+  </div>
+  <button type="submit" (click)="enviarFactura()" class="enviar">ENVIAR</button>
+  <button type="submit" (click)="putaFactura()">facturaaa</button>
+</section>
+
+<section class="snacks">
+  <div class="product--grid">
+    <div *ngFor="let snack of snacksTM">
+      <a (click)="escogerSnack(snack)" class="nav-link">
+        <img [src]="snack.direccionImagen" alt="image">
+        <h2>{{snack.nombreSnack}}</h2>
+        <p>Precio unitario: ${{snack.precioUnitario}}</p>
+      </a>
+    </div>
   </div>
 </section>

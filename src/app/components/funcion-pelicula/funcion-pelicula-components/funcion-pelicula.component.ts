@@ -28,6 +28,7 @@ export class FuncionPeliculaComponent implements OnInit {
   funciones: Funcion[] = [];
   multiplexs: Multiplex[] = [];
   chair="";
+  codigoMultiplex=0;
 
   toggle(){
     if(this.fechaInput == ""){
@@ -55,9 +56,10 @@ export class FuncionPeliculaComponent implements OnInit {
   enviarDatos(multiplex: any){
     let idPelicula = this.activatedRoute.snapshot.paramMap.get('id');
     let start = (this.fechaInput);
+    this.codigoMultiplex = multiplex;
     console.log(start);
     console.log(multiplex);
-     this.funcionService.getFuncionesByPeliculaAndFecha(idPelicula, multiplex, start).subscribe(data =>{
+     this.funcionService.getFuncionesByPeliculaAndFecha(multiplex, idPelicula, start).subscribe(data =>{
        this.funciones=data;
       console.log(data);
      });
@@ -69,7 +71,7 @@ export class FuncionPeliculaComponent implements OnInit {
   irSala(){
     let idPelicula = this.activatedRoute.snapshot.paramMap.get('id');
     console.log(this.router.navigate(['default/dashboard/compra/'+idPelicula+'/sala'+this.codigoFuncion+'/'+this.chair]));
-    this.router.navigate(['default/dashboard/compra/'+idPelicula+'/sala/'+this.codigoFuncion+'/'+this.chair]);
+    this.router.navigate(['default/dashboard/compra/'+idPelicula+'/sala/'+this.codigoMultiplex+'/'+this.codigoFuncion+'/'+this.chair]);
   }
 
   getMultiplex(){

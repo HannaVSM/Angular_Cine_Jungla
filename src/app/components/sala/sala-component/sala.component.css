@@ -1,10 +1,7 @@
+/* CODIGO HANNA NO BORRAR, SÓLO COMENTAR */
+/* .sala{
 
-.sala{
   width: 450px;
-  left: 40%;
-  right: 35%;
-  bottom: 40%;
-  position: absolute;
 
 }
 .sala h1{
@@ -29,4 +26,93 @@
 
 .silla:disabled{
   background-color: #4D3708;
+}
+
+.enviar{
+  margin: 20px;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: #4D0B00;
+  color: white;
+}
+ */
+
+   /* width: 450px;
+
+  /* display: flex; */
+
+.sala{
+  left: 40%;
+  right: 35%;
+  bottom: 40%;
+  position: absolute;
+  width: 450px;
+
+}
+.sala h1{
+  text-align: center;
+
+}
+
+.sala button::after{
+  background-color: #004D2B;
+}
+.contenedorSilla{
+  display: inline;
+}
+.silla{
+  width: 40px;
+  height: 40px;
+  background-color: #3A084D;
+  color: white;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+.silla:disabled{
+  background-color: #4D3708;
+}
+
+.enviar{
+  position: absolute;
+  left: 33%;
+  right: 35%;
+  bottom: -70%;
+  margin: 20px;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: #4D0B00;
+  color: white;
+}
+
+.product--grid{
+  display: flex;
+  flex-wrap: wrap;
+  background: #D9D9D9;
+}
+.product--grid  div{
+  margin: 0.5rem;
+  width: 19rem;
+}
+.product--grid img{
+      width: 3rem;
+      height: 4rem;
+      border-radius: 10px;
+}
+.product--grid h2,p{
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 0;
+  color:#3d3935;
+}
+
+.product--grid p{
+  font-weight: lighter;
+}
+
+.info{
+  font-size: 1.1rem;
+  font-weight: 400;
 }

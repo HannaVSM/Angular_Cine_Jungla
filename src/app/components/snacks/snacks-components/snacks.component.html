@@ -14,14 +14,14 @@
 
 </head> -->
 
-  <div class="snacks">
-    <div class="product--grid">
-        <div *ngFor="let snack of snacks">
-            <img [src]="snack.direccionImagen" alt="image">
-            <h2>{{snack.nombreSnack}}</h2>
-            <p>Precio unitario: ${{snack.precioUnitario}}</p>
-        </div>
+<div class="snacks">
+  <div class="product--grid">
+    <div *ngFor="let snack of snacks">
+      <img [src]="snack.direccionImagen" alt="image">
+      <h2>{{snack.nombreSnack}}</h2>
+      <p>Precio unitario: ${{snack.precioUnitario}}</p>
     </div>
+  </div>
 </div>
     <!-- <div class="snacks">
 

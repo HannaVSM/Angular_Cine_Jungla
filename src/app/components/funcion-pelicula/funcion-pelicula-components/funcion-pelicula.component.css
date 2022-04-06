@@ -15,28 +15,28 @@ select{
     left: 45%;
     right: 28%;
     bottom: 58%;
-     
+
 
  }
 
  .container-general{
-    position: absolute;  
+    position: absolute;
      left: 25%;
      right: 35%;
-     bottom: 15%;
+     bottom: 1%;
 
  }
 
  .panel-multiplex{
-    
+
      width: 600px;
      /* /* position: absolute;  */
      left: 40%;
      right: 35%;
-     
-     
-     
-    
+
+
+
+
  }
  select::-ms-expand{
 
