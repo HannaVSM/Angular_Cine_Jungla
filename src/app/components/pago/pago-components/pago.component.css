@@ -5,7 +5,7 @@
 .pagos{
 margin-top: 50px;
 text-align: center;
- 
+
 }
 .pagos h1{
     color: #036635;
@@ -13,7 +13,7 @@ text-align: center;
 
 .pagos .formulario-boleta{
     background-color: silver;
-    text-align: center; 
+    text-align: center;
     padding: 30px 30px 30px 30px;
     width: 100%;
     max-width: 700px;
@@ -24,24 +24,24 @@ text-align: center;
     margin-left: auto;
    margin-right: auto;
    align-items: center;
-   
-    
 
-    
+
+
+
 }
 .pagos .formulario-boleta label{
-   
+
     margin-bottom: 5px;
     margin-right: 2px;
-    
+
 }
 
 .pagos .formulario-boleta input{
-   
+
   border: 2px solid grey;
   height: 30px;
   font-size: 16px;
-  width: 50%; 
+  width: 50%;
   padding: 12px;
   border-radius: 5px;
   margin-bottom: 8px;
@@ -50,7 +50,7 @@ text-align: center;
   margin-left: auto;
   margin-right: auto;
   display:table-row;
-    
+
 }
 
 /* BOTON */
@@ -63,12 +63,12 @@ text-align: center;
     transition: all 300ms ease;
     color: #ffff;
     border: 2px solid  #006241;
-    
-  
-           
-    
-    
-  
+
+
+
+
+
+
 
 }
 
@@ -88,6 +88,19 @@ text-align: center;
    color:#ffff;
 
 }
+.btn-puntos{
+  border-radius: 40px;
+  width: 100px;
+  height: 30px;
+  box-shadow: #3d3935;
+  background-color: #006241;
+  transition: all 300ms ease;
+  color: #ffff;
+  border: 2px solid  #006241;
+  margin-bottom: 12px;
+  margin-top: 8px;
+
+}
 
 @keyframes shadow-pulse {
 
@@ -98,7 +111,7 @@ text-align: center;
     100%{
         box-shadow: 0 0 8px 16px rgba(3, 44, 41,0.225);
     }
-    
+
 }
 
 
@@ -110,16 +123,16 @@ text-align: center;
             grid-template-columns: repeat(1,1fr);
             grid-gap: 30px;
             padding: 35px 0px;
-        
+
         }
     }
-    
-    
+
+
     @media (max-width:700px){
         header{
             flex-direction: column;
         }
-    
+
         nav{
             padding: 10px 0px;
         }

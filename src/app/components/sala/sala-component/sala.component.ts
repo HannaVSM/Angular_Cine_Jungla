@@ -15,7 +15,8 @@ import { VentaSnackService } from 'src/app/services/ventaSnack.service';
 export class SalaComponent implements OnInit {
 
   constructor(private sillaService: SillaService, private activatedRoute: ActivatedRoute,
-    private facturaCompraService: FacturaCompraService, private ventaSnackService: VentaSnackService) {
+    private facturaCompraService: FacturaCompraService, private ventaSnackService: VentaSnackService,
+    private router:Router) {
     this.getSillas();
     this.getSnacks();
    }
@@ -52,10 +53,10 @@ export class SalaComponent implements OnInit {
     this.facturaCompraService.postSilla(this.sillasTMenvio).subscribe(data =>{
       console.log(data);
     });
-    this.facturaCompraService.postSnack(this.snacksTMenvio).subscribe(data =>{
-      console.log(data);
-    });
-
+    // this.facturaCompraService.postSnack(this.snacksTMenvio).subscribe(data =>{
+    //   console.log(data);
+    // });
+    this.router.navigate(['default/dashboard/compra/pago']);
 
     // this.
   }
