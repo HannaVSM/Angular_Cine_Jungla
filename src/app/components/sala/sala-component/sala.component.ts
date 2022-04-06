@@ -58,8 +58,6 @@ export class SalaComponent implements OnInit {
     //   console.log(data);
     // });
     this.router.navigate(['default/dashboard/compra/'+idPelicula+'/pago']);
-
-    // this.
   }
 
 

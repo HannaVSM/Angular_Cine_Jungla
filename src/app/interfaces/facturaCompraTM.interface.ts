@@ -20,11 +20,4 @@ export interface FacturaCompraTM{
     precioTotalSnacks:number;
     puntosRedimidos:boolean;
     totalPago:number;
-
-
-
-
-
-
-
 }

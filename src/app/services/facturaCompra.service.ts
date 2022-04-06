@@ -10,7 +10,6 @@ import { FacturaCompraTM } from "../interfaces/facturaCompraTM.interface";
 @Injectable({
   providedIn: 'root'
 })
-//por probar
 export class FacturaCompraService{
   private baseUrlBack: string = environment.baseUrlBack+'factura/';
   constructor(private http:HttpClient) {
@@ -40,6 +39,4 @@ export class FacturaCompraService{
     let direccion = this.baseUrlBack+"posibilidadRedimirPuntos";
     return this.http.get<boolean>(direccion);
   }
-
-
 }
