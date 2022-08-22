@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <base href="/">
     <meta charset="UTF-8">
@@ -12,33 +11,24 @@
 </head>
 <body>
     <!-- FORMULARIO -->
-    <div class="pagos">
-        <form class="formulario-boleta" [formGroup]="sesion" (ngSubmit)="comprobacion()">
+    <div class="login">
+        <form class="sessionForm" [formGroup]="sesion" (ngSubmit)="check()">
           <div class="title">
             <h2> INICIO DE SESION </h2> <br>
             <img src="../../../assets/images/logoCine.png" alt="logo del cine">
           </div>
-
-            <div class="elemento1">
-
+            <div>
                 <label for="correo"> Username </label>
                 <input id="correo" type="text" name="correo" formControlName="username">
-
             </div>
-
-            <div class="elemento2">
-
+            <div>
                 <label for="contraseña"> Contraseña </label>
                 <input id="contraseña" type="password" name="contraseña" formControlName="password">
-
             </div>
-
-            <button type="submit" class="btn-entrar"> Entrar </button>
-
+            <button type="submit" class="enterButton"> Entrar </button>
             <p> ¿No tienes una cuenta?</p>
-
             <nav>
-                <a (click)="irRegistro()" class="nav-link">Registrate</a>
+                <a (click)="goToRegister()" class="nav-link">Registrate</a>
             </nav>
         </form>
     </div>

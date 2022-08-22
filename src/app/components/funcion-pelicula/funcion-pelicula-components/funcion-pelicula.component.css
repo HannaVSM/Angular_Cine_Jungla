@@ -8,35 +8,24 @@ select{
      border: 0!important;
      background:grey;
      background-image: none;
-
  }
  .container{
     position: absolute;
     left: 45%;
     right: 28%;
     bottom: 58%;
-
-
  }
 
- .container-general{
-    position: absolute;
-     left: 25%;
-     right: 35%;
-     bottom: 1%;
-
- }
+.container-general{
+  position: absolute;
+  left: 15%;
+  right: 28%;
+  top: 50%;
+}
 
  .panel-multiplex{
-
      width: 600px;
-     /* /* position: absolute;  */
      left: 40%;
-     right: 35%;
-
-
-
-
  }
  select::-ms-expand{
 
@@ -199,13 +188,6 @@ select{
     transition: all 300ms ease;
     color: #ffff;
     border: 2px solid  #006241;
-
-
-
-
-
-
-
 }
 
 
@@ -256,6 +238,5 @@ select{
     justify-content: center;
     align-items: center;
     display: flex;
-
   }
 

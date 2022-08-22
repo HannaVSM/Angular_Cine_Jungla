@@ -9,11 +9,7 @@ import { Cliente } from 'src/app/interfaces/cliente.interface';
   styleUrls: ['./iniciar-sesion.component.css']
 })
 export class IniciarSesionComponent implements OnInit{
-
-
-
   constructor(private router: Router, private clienteService: ClienteService) {
-
    }
 
    ngOnInit(): void {
@@ -26,11 +22,11 @@ export class IniciarSesionComponent implements OnInit{
 
   cliente!: Cliente;
 
-  irRegistro(){
+  goToRegister(){
     this.router.navigate(['register']);
   }
 
-  comprobacion(){
+  check(){
     this.clienteService.getClienteByUsuario(this.sesion.value.username, this.sesion.value.password).subscribe(data =>{
     console.log(data);
     if(data == null){

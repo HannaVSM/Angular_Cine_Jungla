@@ -1,127 +1,95 @@
+.register {
+  text-align: center;
+  background-color: #fff;
+  min-height: 100vh;
+}
 
-.pagos{
+.title {
+  background: #036635;
+  margin-bottom: 20px;
+  padding: 10px;
+}
 
-    text-align: center;
-    background-color: #fff;
-    min-height: 100vh; 
-    
-    }
+.title h2 {
+  color: white;
+}
 
-    .title{
-        background: #036635;
-        margin-bottom: 20px; 
-        padding: 10px;
-     
-    }
-    .title h2{
-        color: white;
-       }
-    
-    .pagos .formulario-boleta{
+.register .registerForm {
+  text-align: center;
+  padding-bottom: 40px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  position: relative;
+  top: 90px;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px #ddd;
+  background: #fff;
+  font-weight: 600;
+  border: solid #ddd;
+}
 
-        text-align: center;
-        padding-bottom: 40px;
-        width: 100%;
-        max-width: 300px;
-        border-radius: 10px;
-        position:relative;
-        top: 90px;
-        margin:auto;
-        z-index: 1;
-        margin-bottom: 20px;
-        box-shadow: 0 0 15px #ddd;
-        background: #fff;
-        font-weight: 600;
-        border:solid #ddd;
-        
-    }
+.register .registerForm label {
+  display: block;
+  margin-bottom: 5px;
+  margin-right: 2px;
+  padding-top: 10px;
+  color: #3d3935;
+}
 
-    .pagos .formulario-boleta label{
-       
-        display: block;
-        margin-bottom: 5px;
-        margin-right: 2px;
-        padding-top: 10px;
-        color: #3d3935;
-        
-    }
-    
-    .pagos .formulario-boleta input{
-       
-      border: 2px solid #3AA677;
-      background: #7ECFAC;
-      height: 30px;
-      font-size: 16px;
-      width: 90%;
-      padding: 5px 12px;
-      border-radius: 5px;
-        
-    }
+.register .registerForm input {
+  border: 2px solid #3AA677;
+  background: #7ECFAC;
+  height: 30px;
+  font-size: 16px;
+  width: 90%;
+  padding: 5px 12px;
+  border-radius: 5px;
+}
 
-    .pagos .formulario-boleta .btn-entrar{
+.register .registerForm .btn-entrar {
+  margin-top: 10px;
+}
 
-        margin-top: 10px;
-    }
+.register .registerForm a {
+  color: #3d3935;
+}
 
-    .pagos .formulario-boleta a{
-        color:  #3d3935;
-    }
+.register .registerForm a:hover {
+  color: #3AA677;
+}
 
-    .pagos .formulario-boleta a:hover{
-        color:  #3AA677;
-    }
+.register .registerForm img {
+  height: 70px;
+  width: 70px;
+  margin-bottom: 7px;
 
-    .pagos .formulario-boleta img{
-        height: 70px;
-        width: 70px;
-        margin-bottom: 7px;
+}
 
-    }
-     
-    .pagos .formulario-tarjetas label{
-    
-        display: block;
-        margin-bottom: 5px;
-        margin-right: 2px;
-    }
-    
-    .pagos .formulario-tarjetas input,.btn-entrar{
-    
-     border: 2px solid gray;
-      height: 50px;
-      font-size: 16px;
-      width: 90%;
-      padding: 5px 12px;
-      border-radius: 5px;
-      background: #036635;
-    
-    }
-    
-    .formulario-tarjetas input{
-        margin-bottom: 20px;
-        text-transform: uppercase;
-    }
+.register .registerForm label {
+  margin-bottom: 5px;
+  margin-right: 2px;
+}
 
+.btn-entrar {
+  border: 2px solid gray;
+  height: 50px;
+  font-size: 16px;
+  width: 90%;
+  padding: 5px 12px;
+  border-radius: 5px;
+  background: #036635;
+}
 
+/* RESPONSIVE */
 
-    /* RESPONSIVE */
-    @media screen and (max-widht: 700px) {
-        .pie-pagina .grupo-1{
-            width: 90%;
-            grid-template-columns: repeat(1,1fr);
-            grid-gap: 30px;
-            padding: 35px 0px;
-        
-        }
-    }
-    
-    
-    @media (max-width:700px){
-        header{
-            flex-direction: column;
-        }
-    
-        nav{
-            padding: 10px 0px;
-        }
-    }
+@media (max-width:700px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    padding: 10px 0px;
+  }
+}

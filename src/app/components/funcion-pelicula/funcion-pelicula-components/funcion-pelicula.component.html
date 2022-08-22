@@ -1,52 +1,29 @@
-
-<body>
-
-      <!-- FECHA Y HORA DE LA FUNCION -->
-
-      <div class="container">
-        <h1> Selección de fecha</h1>
-          <input type="date" [(ngModel)]="fechaInput">
-          <!-- <button type="submit" (click)="enviarFecha()">Enviar</button> -->
-      </div>
-
-    <!-- <div class="calendario">
-     <p> selecciona una fecha</p>
-    <mat-form-field>
-        <input matInput [matDatepicker]="fecha">
-        <mat-datepicker-toggle [for]="fecha" matSuffix ></mat-datepicker-toggle>
-        <mat-datepicker #fecha></mat-datepicker>
-         [disabled]="toggle()"
-
-
-
-    </mat-form-field>
-
+<!-- FECHA Y HORA DE LA FUNCION -->
+  <div class="container">
+    <h1> Selección de fecha</h1>
+    <input type="date" [(ngModel)]="fechaInput">
+  </div>
+  <div class="container-general" style="padding: 3em 3em">
+    <div *ngFor="let multiplex of multiplexs">
+      <mat-expansion-panel class="panel-multiplex" (opened)="enviarDatos(multiplex.codigoMultiplex)"
+        [disabled]="toggle()">
+        <mat-expansion-panel-header>
+          <mat-panel-title>{{multiplex.nombreMultiplex}}</mat-panel-title>
+          <mat-panel-description> </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div *ngFor="let funcion of funciones">
+          <button type="submit" class="btn-hora" (click)="sendHora(funcion.codigoFuncion)">{{funcion.horaFuncion |
+            date:'shortTime'}}</button>
+        </div>
+        <mat-radio-group aria-label="Select an option" [(ngModel)]="chair">
+          <mat-radio-button value="general">Silla General </mat-radio-button>
+          <mat-radio-button value="preferencial">Silla Preferencial </mat-radio-button>
+        </mat-radio-group>
+        <div class="boton">
+          <button type="submit" [disabled]="recibirDatos()" (click)="irSala()" class="btn-sillas"> Escoger sillas
+          </button>
+        </div>
+      </mat-expansion-panel>
     </div>
-   -->
-
-
-    <div class="container-general" style="padding: 3em 3em">
-
-
-<div *ngFor="let multiplex of multiplexs">
-  <mat-expansion-panel class="panel-multiplex" (opened)="enviarDatos(multiplex.codigoMultiplex)" [disabled]="toggle()">
-    <mat-expansion-panel-header>
-        <mat-panel-title>{{multiplex.nombreMultiplex}}</mat-panel-title>
-        <mat-panel-description> </mat-panel-description>
-    </mat-expansion-panel-header>
-    <div *ngFor="let funcion of funciones">
-      <button type="submit" class="btn-hora" (click)="sendHora(funcion.codigoFuncion)">{{funcion.horaFuncion | date:'shortTime'}}</button>
-    </div>
-    <mat-radio-group aria-label="Select an option" [(ngModel)]="chair">
-        <mat-radio-button value="general">Silla General </mat-radio-button>
-        <mat-radio-button value="preferencial">Silla Preferencial </mat-radio-button>
-      </mat-radio-group>
-      <div class="boton">
-        <button type="submit" [disabled]="recibirDatos()" (click)="irSala()" class="btn-sillas"> Escoger sillas </button>
-      </div>
-</mat-expansion-panel>
-</div>
-</div>
-</body>
-
+  </div>
 
